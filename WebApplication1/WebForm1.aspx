@@ -13,7 +13,13 @@
     <table class="calculator" id="calc">
             <tr>
                 <td colspan="4" class="calc_td_result">
+                    <input type="text" readonly="readonly" runat="server" name="calc_result" id="calc_dis" class="calc_result" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="calc_td_result">
                     <input type="text" readonly="readonly" runat="server" name="calc_result" id="calc_result" class="calc_result" />
+                    <input type="text" readonly="readonly" visible=false runat="server" name="calc_result" id="Text1" class="calc_result" />
                 </td>
             </tr>
             <tr>
@@ -80,7 +86,7 @@
                         <asp:Button ID="ButtonPlusMinus" runat="server" CssClass="calc_btn" Text="&plusmn;" OnClick="ButtonPlusMinus_Click"/>
                 </td>
                 <td class="calc_td_btn">
-                        <asp:Button ID="ButtonComa" runat="server" CssClass="calc_btn" Text="," OnClick="ButtonComa_Click" />
+                        <asp:Button ID="ButtonComa" runat="server" CssClass="calc_btn" Text="." OnClick="ButtonComa_Click" />
                 </td>
                 <td class="calc_td_btn">
                         <asp:Button ID="ButtonEquals" runat="server" CssClass="calc_btn" Text="=" OnClick="ButtonEquals_Click"/>
